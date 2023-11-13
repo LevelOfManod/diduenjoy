@@ -1,0 +1,202 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+li, ol, ul {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input, button,
+textarea, select {
+  font: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: none;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexCol {
+  flex-direction: column;
+}
+
+.jcs {
+  justify-content: center;
+}
+
+.jce {
+  justify-content: end;
+}
+
+.aic {
+  align-items: center;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.jcsa {
+  justify-content: space-around;
+}
+
+.aie {
+  align-items: end;
+}
+
+.tal {
+  text-align: center;
+}
+
+.w25 {
+  width: 25%;
+}
+
+.w33 {
+  width: 33.33%;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.w75 {
+  width: 75%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h5 {
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #F6F8FB;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.gp24 {
+  gap: 24px;
+}
+
+.containerKpiArea {
+  max-width: 1512px;
+  margin: 0 64px;
+}
+
+.flexWrap {
+  flex-wrap: wrap;
+}
+
+header {
+  background-color: #1B3448;
+  padding: 24px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.0784313725);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.0196078431);
+}
+
+.addKpiArea {
+  background: #F6F8FB;
+  padding: 64px 0;
+}
+
+.kpiButtonAddElement {
+  width: 246px;
+  height: 133px;
+  padding: 24px;
+  border-radius: 6px;
+  border: 1px dashed var(--9-eb-0-be, #9eb0be);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 0px 6px 0px rgba(0, 0, 0, 0.02);
+}
+
+.kpiButtonBox {
+  border-radius: 6px;
+  background: var(--gray-white, #fff);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 0px 6px 0px rgba(0, 0, 0, 0.02);
+  width: 246px;
+  height: 133px;
+  padding: 24px;
+  cursor: pointer;
+}
+
+.kpiButtonBox:focus {
+  border-radius: 6px;
+  border: 2px solid var(--0-aa-9-ec, #0aa9ec);
+  background: var(--gray-white, #fff);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 0px 6px 0px rgba(0, 0, 0, 0.02);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,93 @@
+// Container
+.container {
+  margin: 0 auto;
+  width: 1170px;
+}
+//-------------------------------------
+// FlexBox
+.flex {
+  display: flex;
+}
+
+.flexCol {
+  flex-direction: column;
+}
+
+.jcs {
+  justify-content: center;
+}
+
+.jce {
+  justify-content: end;
+}
+
+.aic {
+  align-items: center;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.jcsa {
+  justify-content: space-around;
+}
+
+.aie {
+  align-items: end;
+}
+
+.tal {
+  text-align: center;
+}
+
+//-------------------------------------
+// Size
+.w25 {
+  width: 25%;
+}
+.w33 {
+  width: 33.33%;
+}
+.w50 {
+  width: 50%;
+}
+.w75 {
+  width: 75%;
+}
+.w100 {
+  width: 100%;
+}
+
+//-------------------------------------
+//Font
+
+body {
+  font-family: $mainFont;
+}
+
+h5 {
+  font-family: $mainFont;
+  color: $mainColorWhite;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+//Gap
+.gp24 {
+  gap: 24px;
+}
+
+//Container
+.containerKpiArea {
+  max-width: 1512px;
+  margin: 0 64px;
+}
+
+//Wrap
+.flexWrap {
+  flex-wrap: wrap;
+}
