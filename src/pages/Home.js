@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/Header/Header";
 import SectionAddKPI from "../components/SectionAddKPI/SectionAddKPI";
 import SectionForm from "../components/SectionForm/SectionForm";
 
 const Home = () => {
+  const [starCliqued, setStarCliqued] = useState(false);
+
+  const whenStarCliqued = (value) => {
+    setStarCliqued(value);
+  };
+
   return (
     <>
       <Header />
-      <SectionAddKPI />
-      <SectionForm />
+      <SectionAddKPI whenStarCliqued={starCliqued} />
+      <SectionForm whenStarCliqued={whenStarCliqued} />
     </>
   );
 };

@@ -1,11 +1,22 @@
 import React, { useState } from "react";
 import { arrayIcons } from "./ArrayIcons";
 
-const SectionForm = () => {
+const SectionForm = ({ whenStarCliqued }) => {
   const [kpiName, setKpiName] = useState("");
-
-
+  const [clickedIndex, setClickedIndex] = useState(null);
   
+  const displayTooltipText = (index) => {
+    console.log("Element:", index);
+    setClickedIndex(index);
+    
+      if (index === 14) {
+      console.log("Element 14 trouvé");    
+      whenStarCliqued(true);  
+    } else {
+      console.log("pas trouvé", index);
+    }
+  };
+
   return (
     <div className="mainContainer">
       <div className="cardSettings flex flexCol gp32">
@@ -53,8 +64,42 @@ const SectionForm = () => {
 
                 <div className="w100 flex gp8">
                   {arrayIcons.map((icon, index) => (
-                    <button className="iconBox" key={index}>{icon.src}</button>
+                    <button
+                      onClick={() => displayTooltipText(index)}
+                      className="iconBox"
+                      key={index}
+                    >
+                      {icon.src}
+                    </button>
                   ))}
+                </div>
+              </div>
+
+              <div className="flex flexCol gp8 tooltipBox">
+                <div className="fixContent">
+                  <p className="BoldText">Value</p>
+                </div>
+
+                <div className="w100">
+                  <input
+                    className="input w100"
+                    placeholder="74"
+                    type="number"
+                  />
+                </div>
+              </div>
+
+              <div className="flex flexCol gp8 tooltipBox">
+                <div className="fixContent">
+                  <p className="BoldText">Trend</p>
+                </div>
+
+                <div className="w100">
+                  <input
+                    className="input w100"
+                    placeholder="Positive"
+                    type="text"
+                  />
                 </div>
               </div>
             </>

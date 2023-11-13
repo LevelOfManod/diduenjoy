@@ -175,8 +175,20 @@ h5 {
   text-align: left;
 }
 
+.gp4 {
+  gap: 4px;
+}
+
+.gp7 {
+  gap: 7px;
+}
+
 .gp8 {
   gap: 8px;
+}
+
+.gp16 {
+  gap: 16px;
 }
 
 .gp24 {
@@ -257,10 +269,11 @@ header {
 }
 
 .iconBox:focus {
-  border: 1px solid #0AA9EC;
+  border: 1px solid #0aa9ec;
 }
 
-input[type=text] {
+input[type=text],
+input[type=number] {
   padding: 8px 10px;
   align-self: stretch;
   border-radius: 6px;
@@ -286,4 +299,38 @@ input[type=text] {
   font-weight: 400;
   line-height: 140%;
   letter-spacing: -0.006px;
+}
+
+.titleCardKpi {
+  color: #1b3448;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.006px;
+}
+
+.boldNumberCardKpi {
+  color: #1b3448;
+  font-variant-numeric: lining-nums proportional-nums ordinal;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: -0.33px;
+}
+
+.tooltipText {
+  color: #F6F8FB;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.006px;
+  padding: 8px;
+  border-radius: 6px;
+  background: #1b3448;
 }/*# sourceMappingURL=style.css.map */
