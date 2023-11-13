@@ -5,7 +5,7 @@ import SectionForm from "../components/SectionForm/SectionForm";
 
 const Home = () => {
   const [starCliqued, setStarCliqued] = useState(false);
-
+//revoir
   const whenStarCliqued = (value) => {
     setStarCliqued(value);
   };

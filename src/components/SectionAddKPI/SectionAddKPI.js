@@ -23,7 +23,7 @@ const SectionAddKPI = ({ whenStarCliqued }) => {
               </div>
 
               <div className="flex aic">
-                <p className="tooltipText">KPI explanation</p>
+                <p className="tooltipText hoverEffect">KPI explanation</p>
                 <img src={Sparkles} alt="sparkles" />
               </div>
             </div>
