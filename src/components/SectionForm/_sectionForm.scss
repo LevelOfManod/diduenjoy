@@ -10,13 +10,22 @@
   border: 1px solid #e1e8ee;
   background: $mainColorWhite;
   padding: 8px;
+  cursor: pointer;
+}
+
+.iconBox:hover {
+  border: 1px solid  #9eb0be;
+}
+
+.iconBox:focus {
+  border: 1px solid #0AA9EC;
 }
 
 input[type="text"] {
   padding: 8px 10px;
   align-self: stretch;
   border-radius: 6px;
-  border: 1px solid  #e1e8ee;
+  border: 1px solid #e1e8ee;
   background: $mainColorWhite;
 }
 

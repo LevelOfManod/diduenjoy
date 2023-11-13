@@ -6,9 +6,7 @@ const SectionAddKPI = () => {
   const addKpiBlock = () => {
     setKpiItems([
       ...kpiItems,
-      <button className="kpiButtonBox" key={kpiItems.length}>
-        test
-      </button>,
+      <button className="kpiButtonBox" key={kpiItems.length}> </button>,
     ]);
   };
 

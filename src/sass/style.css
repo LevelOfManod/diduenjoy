@@ -249,6 +249,15 @@ header {
   border: 1px solid #e1e8ee;
   background: #F6F8FB;
   padding: 8px;
+  cursor: pointer;
+}
+
+.iconBox:hover {
+  border: 1px solid #9eb0be;
+}
+
+.iconBox:focus {
+  border: 1px solid #0AA9EC;
 }
 
 input[type=text] {

@@ -53,7 +53,7 @@ const SectionForm = () => {
 
                 <div className="w100 flex gp8">
                   {arrayIcons.map((icon, index) => (
-                    <div className="iconBox" key={index}>{icon.src}</div>
+                    <button className="iconBox" key={index}>{icon.src}</button>
                   ))}
                 </div>
               </div>
