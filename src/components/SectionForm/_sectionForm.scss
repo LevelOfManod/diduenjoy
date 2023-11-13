@@ -1,0 +1,25 @@
+.cardSettings {
+  padding: 32px 24px;
+}
+
+.allElementsInput{
+    
+}
+
+input[type="text"] {
+  padding: 8px 10px;
+  align-self: stretch;
+  border-radius: 6px;
+  border: 1px solid var(--gray-gray-lighter, #e1e8ee);
+  background: $mainColorWhite;
+}
+
+::placeholder{
+    color: var(--gray-gray-dark, #9EB0BE);
+    font-family: $mainFont;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.006px;
+}
