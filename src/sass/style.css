@@ -179,6 +179,10 @@ h5 {
   gap: 4px;
 }
 
+.gp5 {
+  gap: 5px;
+}
+
 .gp7 {
   gap: 7px;
 }
@@ -333,4 +337,17 @@ input[type=number] {
   padding: 8px;
   border-radius: 6px;
   background: #1b3448;
+}
+
+.updateButtonKpi {
+  border-radius: 6px;
+  background: #0aa9ec;
+  padding: 8px 14px 8px 10px;
+  color: #F6F8FB;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: -0.006px;
 }/*# sourceMappingURL=style.css.map */

@@ -73,3 +73,16 @@ input[type="number"] {
   border-radius: 6px;
   background: #1b3448;
 }
+
+.updateButtonKpi {
+  border-radius: 6px;
+  background: #0aa9ec;
+  padding: 8px 14px 8px 10px;
+  color: $mainColorWhite;
+  font-family: $mainFont;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: -0.006px;
+}

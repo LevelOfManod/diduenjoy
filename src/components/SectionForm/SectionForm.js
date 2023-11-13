@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import { arrayIcons } from "./ArrayIcons";
+import RefreshIcon from "../../asset/img/refresh.svg";
 
 const SectionForm = ({ whenStarCliqued }) => {
   const [kpiName, setKpiName] = useState("");
   const [clickedIndex, setClickedIndex] = useState(null);
-  
+
   const displayTooltipText = (index) => {
     console.log("Element:", index);
     setClickedIndex(index);
-    
-      if (index === 14) {
-      console.log("Element 14 trouvé");    
-      whenStarCliqued(true);  
+
+    if (index === 14) {
+      console.log("Element 14 trouvé");
+      whenStarCliqued(true);
     } else {
       console.log("pas trouvé", index);
     }
@@ -101,6 +102,13 @@ const SectionForm = ({ whenStarCliqued }) => {
                     type="text"
                   />
                 </div>
+              </div>
+
+              <div className="flex jce ">
+                <button className="updateButtonKpi flex aic gp5">
+                  <img src={RefreshIcon} alt="Refresh section" />
+                  Update KPI
+                </button>
               </div>
             </>
           )}
