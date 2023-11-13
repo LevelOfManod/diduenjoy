@@ -219,13 +219,13 @@ header {
   height: 133px;
   padding: 24px;
   border-radius: 6px;
-  border: 1px dashed var(--9-eb-0-be, #9eb0be);
+  border: 1px dashed #9eb0be;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 0px 6px 0px rgba(0, 0, 0, 0.02);
 }
 
 .kpiButtonBox {
   border-radius: 6px;
-  background: var(--gray-white, #fff);
+  background: #F6F8FB;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 0px 6px 0px rgba(0, 0, 0, 0.02);
   width: 246px;
   height: 133px;
@@ -235,8 +235,8 @@ header {
 
 .kpiButtonBox:focus {
   border-radius: 6px;
-  border: 2px solid var(--0-aa-9-ec, #0aa9ec);
-  background: var(--gray-white, #fff);
+  border: 2px solid #0aa9ec;
+  background: #F6F8FB;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 0px 6px 0px rgba(0, 0, 0, 0.02);
 }
 
@@ -244,16 +244,23 @@ header {
   padding: 32px 24px;
 }
 
+.iconBox {
+  border-radius: 6px;
+  border: 1px solid #e1e8ee;
+  background: #F6F8FB;
+  padding: 8px;
+}
+
 input[type=text] {
   padding: 8px 10px;
   align-self: stretch;
   border-radius: 6px;
-  border: 1px solid var(--gray-gray-lighter, #e1e8ee);
+  border: 1px solid #e1e8ee;
   background: #F6F8FB;
 }
 
 ::-moz-placeholder {
-  color: var(--gray-gray-dark, #9EB0BE);
+  color: #9eb0be;
   font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -263,7 +270,7 @@ input[type=text] {
 }
 
 ::placeholder {
-  color: var(--gray-gray-dark, #9EB0BE);
+  color: #9eb0be;
   font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
   font-style: normal;

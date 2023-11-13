@@ -29,9 +29,9 @@ const SectionAddKPI = () => {
             <path
               d="M9 1.5V17.5M17 9.5H1"
               stroke="#71899C"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </button>

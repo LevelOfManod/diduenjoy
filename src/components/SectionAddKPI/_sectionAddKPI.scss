@@ -8,14 +8,14 @@
   height: 133px;
   padding: 24px;
   border-radius: 6px;
-  border: 1px dashed var(--9-eb-0-be, #9eb0be);
+  border: 1px dashed #9eb0be;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08),
     0px 0px 6px 0px rgba(0, 0, 0, 0.02);
 }
 
 .kpiButtonBox {
   border-radius: 6px;
-  background: var(--gray-white, #fff);
+  background: $mainColorWhite;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08),
     0px 0px 6px 0px rgba(0, 0, 0, 0.02);
   width: 246px;
@@ -26,8 +26,8 @@
 
 .kpiButtonBox:focus {
   border-radius: 6px;
-  border: 2px solid var(--0-aa-9-ec, #0aa9ec);
-  background: var(--gray-white, #fff);
+  border: 2px solid #0aa9ec;
+  background: $mainColorWhite;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08),
     0px 0px 6px 0px rgba(0, 0, 0, 0.02);
 }

@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import { arrayIcons } from "./ArrayIcons";
 
 const SectionForm = () => {
   const [kpiName, setKpiName] = useState("");
 
+
+  
   return (
     <div className="mainContainer">
       <div className="cardSettings flex flexCol gp32">
@@ -28,19 +31,33 @@ const SectionForm = () => {
           </div>
 
           {kpiName && (
-            <div className="flex flexCol gp8 tooltipBox">
-              <div className="fixContent">
-                <p className="BoldText">Tooltip</p>
+            <>
+              <div className="flex flexCol gp8 tooltipBox">
+                <div className="fixContent">
+                  <p className="BoldText">Tooltip</p>
+                </div>
+
+                <div className="w100">
+                  <input
+                    className="input w100"
+                    placeholder="Element name"
+                    type="text"
+                  />
+                </div>
               </div>
 
-              <div className="w100">
-                <input
-                  className="input w100"
-                  placeholder="Element name"
-                  type="text"
-                />
+              <div className="flex flexCol gp8 tooltipBox">
+                <div className="fixContent">
+                  <p className="BoldText">Icon</p>
+                </div>
+
+                <div className="w100 flex gp8">
+                  {arrayIcons.map((icon, index) => (
+                    <div className="iconBox" key={index}>{icon.src}</div>
+                  ))}
+                </div>
               </div>
-            </div>
+            </>
           )}
         </div>
       </div>
