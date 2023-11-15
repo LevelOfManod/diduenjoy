@@ -383,6 +383,7 @@ textarea {
   padding: 5px;
   border: 1px solid #e1e8ee;
   cursor: pointer;
+  border-radius: 4px;
 }
 .selectTrendMenu ul li {
   border-radius: 4px;
