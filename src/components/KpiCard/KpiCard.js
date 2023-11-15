@@ -1,64 +1,40 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
+import iconInfo from '../../asset/img/info_outined.svg'
 
-const KpiCard = () => {
-    // const [emptyCard, setEmptyCard] = useState();
-    // const [cardIsCliqued, setCardIsCliqued] = useState(false);
+const KpiCard = ({ data }) => {
+  const [cardIsCliqued, setCardIsCliqued] = useState(false);
 
+  const aCardHasBeenSelected = () => {
+    setCardIsCliqued(true);
+  };
 
-
-    // const addKpiBlock = () => {
-    //     setKpiItems([
-    //       ...kpiItems,
-    //       <button
-    //         onClick={cardIsActive}
-    //         className="kpiButtonBox"
-    //         key={kpiItems.length}
-    //       >
-    //         {cardIsCliqued && (
-    //           <div className="flex flexCol gp16">
-    //             <div className="flex gp7">
-    //               <div className="flex aic gp4">
-    //                 <span className="titleCardKpi">{kpiName}</span>
-    //                 <img id="infoIcon" src={iconInfo} alt="Icon information" />
-    //                 {/* <div className="test">
-    //                   <p id="tooltipText">KPI explanation</p>
-    //                 </div> */}
-    //               </div>
-    
-    
-    //               {/* à activer au hover */}
-    //                 {/* {kpiTooltip} */}
-    
-    
-    //               <div className="flex aic">
-    //                  {/* {kpiIcon.index} */}
-    
-    //                 {kpiIcon && arrayIcons.map((icon, index) => (
-    //                   <div key={index}>
-    //                     {icon.src}
-    //                   </div>
-    //                 ))} 
-    
-                    
-    //               </div>
-    //             </div>
-    
-    //             <div className="flex aic gp24">
-    //               <span className="boldNumberCardKpi">{kpiNumber}</span>
-    //               {/* <img src={GraphCourbe} alt="Courbe" /> */}
-    //               {kpiTrend}
-    //             </div>
-    //           </div>
-    //         )}
-    //       </button>,
-    //     ]);
-    //   };
 
   return (
-    <div>
-        
-    </div>
-  )
-}
+    <>
+      {cardIsCliqued ? (
+        <div className=" kpiButtonBox flex flexCol gp16">
+          <div className="flex gp7">
+            <div className="flex aic gp4">
+              <span className="titleCardKpi">{data.kpiName}</span>
+              <img id="infoIcon" src={iconInfo} alt="Icon information" />
+            </div>
 
-export default KpiCard
+            <div className="flex aic"></div>
+          </div>
+
+          <div className="flex aic gp24">
+            <span className="boldNumberCardKpi">{data.kpiNumber}</span>
+            {data.kpiTrend}
+          </div>
+        </div>
+      ) : (
+        <button
+          onClick={aCardHasBeenSelected}
+          className="kpiButtonBox"
+        ></button>
+      )}
+    </>
+  );
+};
+
+export default KpiCard;
