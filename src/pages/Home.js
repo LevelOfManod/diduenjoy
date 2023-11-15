@@ -2,16 +2,17 @@ import React, { useState } from "react";
 import Header from "../components/Header/Header";
 import SectionAddKPI from "../components/SectionAddKPI/SectionAddKPI";
 import SectionForm from "../components/SectionForm/SectionForm";
-
 const Home = () => {
 
   const [allDataFromTheForm, setAllDataFromTheForm] = useState({
-    kpiName: "Element name",
-    kpiTooltip: "Element name",
+    kpiName: null,
+    kpiTooltip: null,
     kpiIcon: null,
-    kpiNumber: "Enter a value",
-    kpiTrend: "Select",
+    kpiNumber: null,
+    kpiTrend: null,
   });
+
+  console.log(allDataFromTheForm.kpiIcon);
 
   const handleFormUpdate = (updateData) =>{
     setAllDataFromTheForm(updateData)

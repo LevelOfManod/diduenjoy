@@ -1,0 +1,35 @@
+.selectDropdown {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.006px;
+}
+
+.selectTrend {
+  background: $mainColorPureWhite;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #e1e8ee;
+  cursor: pointer;
+  p {
+    color: #9eb0be;
+  }
+}
+
+.selectTrendMenu {
+  color: $mainColorNavyBlue;
+  padding: 5px;
+  border: 1px solid #e1e8ee;
+  cursor: pointer;
+  ul li {
+    border-radius: 4px;
+    padding: 8px;
+  }
+  ul li:hover {
+    background: $mainColorGrayLightest;
+  }
+  ul li:active {
+    background: $mainColorSkyBlue;
+    color: $mainColorPureWhite;
+  }
+}

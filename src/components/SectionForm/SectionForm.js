@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { arrayIcons } from "./ArrayIcons";
 import RefreshIcon from "../../asset/img/refresh.svg";
+import SelectTrend from "../SelectTrend/SelectTrend";
 
 const SectionForm = ({ onUpdate, data }) => {
   const [displayAllForm, setDisplayAllForm] = useState(false);
@@ -104,11 +105,12 @@ const SectionForm = ({ onUpdate, data }) => {
                 </div>
 
                 <div className="w100">
-                  <input
+                  {/* <input
                     className="input w100"
                     placeholder="Select"
                     type="text"
-                  />
+                  /> */}
+                  <SelectTrend />
                 </div>
               </div>
 
