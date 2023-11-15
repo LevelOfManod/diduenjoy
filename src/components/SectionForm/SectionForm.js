@@ -2,20 +2,25 @@ import React, { useState } from "react";
 import { arrayIcons } from "./ArrayIcons";
 import RefreshIcon from "../../asset/img/refresh.svg";
 
-const SectionForm = ({ whenStarCliqued }) => {
-  const [kpiName, setKpiName] = useState("");
-  const [clickedIndex, setClickedIndex] = useState(null);
+const SectionForm = ({ onUpdate, data }) => {
+  const [displayAllForm, setDisplayAllForm] = useState(false);
 
-  const displayTooltipText = (index) => {
-    console.log("Element:", index);
-    setClickedIndex(index);
+  const getIcon = (index) => {
+    const iconValue = index;
+    onUpdate({ ...data, kpiIcon: iconValue });
+  };
 
-    if (index === 14) {
-      console.log("Element 14 trouvé");
-      whenStarCliqued(true);
-    } else {
-      console.log("pas trouvé", index);
+
+  const getValueFromAllInput = (event) => {
+    // Déstructuration pour obtenir la valeur des input avec leur name=""
+    const { name, value } = event.target;
+
+    if(name === "kpiName") {
+      setDisplayAllForm(value !== "")
+      // Si la valeur de name="kpiName" n'est n'est pas une chaine vide on le passe a true
     }
+
+    onUpdate({ ...data, [name]: value });
   };
 
   return (
@@ -25,7 +30,7 @@ const SectionForm = ({ whenStarCliqued }) => {
           <h4>Card settings</h4>
         </div>
 
-        <div className="allElementsInput flex flexCol gp24">
+        <div className="flex flexCol gp24">
           <div className=" flex flexCol gp8">
             <div className="fixContent">
               <p className="BoldText">KPI name</p>
@@ -34,15 +39,15 @@ const SectionForm = ({ whenStarCliqued }) => {
             <div className="w100">
               <input
                 className="input w100"
+                name="kpiName"
                 placeholder="Element name"
                 type="text"
-                value={kpiName}
-                onChange={(e) => setKpiName(e.target.value)}
+                onChange={getValueFromAllInput}
               />
             </div>
           </div>
 
-          {kpiName && (
+          {displayAllForm && (
             <>
               <div className="flex flexCol gp8 tooltipBox">
                 <div className="fixContent">
@@ -50,11 +55,12 @@ const SectionForm = ({ whenStarCliqued }) => {
                 </div>
 
                 <div className="w100">
-                  <input
+                  <textarea
+                    name="kpiTooltip"
                     className="input w100"
                     placeholder="Element name"
-                    type="text"
-                  />
+                    onChange={getValueFromAllInput}
+                  ></textarea>
                 </div>
               </div>
 
@@ -66,7 +72,7 @@ const SectionForm = ({ whenStarCliqued }) => {
                 <div className="w100 flex gp8">
                   {arrayIcons.map((icon, index) => (
                     <button
-                      onClick={() => displayTooltipText(index)}
+                      onClick={() => getIcon(index)}
                       className="iconBox"
                       key={index}
                     >
@@ -83,9 +89,11 @@ const SectionForm = ({ whenStarCliqued }) => {
 
                 <div className="w100">
                   <input
+                    name="kpiNumber"
                     className="input w100"
-                    placeholder="74"
+                    placeholder="Enter a value"
                     type="number"
+                    onChange={getValueFromAllInput}
                   />
                 </div>
               </div>
@@ -98,7 +106,7 @@ const SectionForm = ({ whenStarCliqued }) => {
                 <div className="w100">
                   <input
                     className="input w100"
-                    placeholder="Positive"
+                    placeholder="Select"
                     type="text"
                   />
                 </div>

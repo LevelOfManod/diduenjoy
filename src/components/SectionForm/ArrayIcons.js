@@ -1,5 +1,6 @@
 export const arrayIcons = [
   {
+    text: "KPI 1",
     index: 1,
     src: (
       <svg
@@ -20,6 +21,7 @@ export const arrayIcons = [
     ),
   },
   {
+    text: "KPI 2",
     index: 2,
     src: (
       <svg
@@ -41,6 +43,7 @@ export const arrayIcons = [
     ),
   },
   {
+    text: "KPI 3",
     index: 3,
     src: (
       <svg
@@ -60,6 +63,7 @@ export const arrayIcons = [
     ),
   },
   {
+    text: "KPI 4",
     index: 4,
     src: (
       <svg
@@ -79,6 +83,7 @@ export const arrayIcons = [
     ),
   },
   {
+    text: "KPI 5",
     index: 5,
     src: (
       <svg
@@ -96,6 +101,7 @@ export const arrayIcons = [
     ),
   },
   {
+    text: "KPI 5",
     index: 6,
     src: (
       <svg
@@ -115,6 +121,7 @@ export const arrayIcons = [
     ),
   },
   {
+    text: "KPI 6",
     index: 7,
     src: (
       <svg
@@ -134,6 +141,7 @@ export const arrayIcons = [
     ),
   },
   {
+    text: "KPI 7",
     index: 8,
     src: (
       <svg
@@ -159,6 +167,7 @@ export const arrayIcons = [
     ),
   },
   {
+    text: "KPI 8",
     index: 9,
     src: (
       <svg
@@ -184,6 +193,7 @@ export const arrayIcons = [
     ),
   },
   {
+    text: "KPI 9",
     index: 10,
     src: (
       <svg
@@ -201,6 +211,7 @@ export const arrayIcons = [
     ),
   },
   {
+    text: "KPI 10",
     index: 11,
     src: (
       <svg
@@ -224,6 +235,7 @@ export const arrayIcons = [
     ),
   },
   {
+    text: "KPI 11",
     index: 12,
     src: (
       <svg
@@ -243,6 +255,7 @@ export const arrayIcons = [
     ),
   },
   {
+    text: "KPI 12",
     index: 13,
     src: (
       <svg
@@ -263,6 +276,7 @@ export const arrayIcons = [
     ),
   },
   {
+    text: "KPI 13",
     index: 14,
     src: (
       <svg
@@ -290,6 +304,7 @@ export const arrayIcons = [
     ),
   },
   {
+    text: "KPI explanation",
     index: 15,
     src: (
       <svg
@@ -315,6 +330,7 @@ export const arrayIcons = [
     ),
   },
   {
+    text: "KPI 15",
     index: 16,
     src: (
       <svg
@@ -334,6 +350,7 @@ export const arrayIcons = [
     ),
   },
   {
+    text: "KPI 16",
     index: 17,
     src: (
       <svg

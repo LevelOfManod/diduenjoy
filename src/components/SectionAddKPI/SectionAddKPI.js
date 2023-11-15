@@ -1,36 +1,70 @@
 import React, { useState } from "react";
-import GraphCourbe from "../../asset/img/trend.svg";
+// import GraphCourbe from "../../asset/img/trend.svg";
 import iconInfo from "../../asset/img/info_outined.svg";
-import Sparkles from "../../asset/img/sparkles.svg";
+// import Sparkles from "../../asset/img/sparkles.svg";
 
-// import { ArrayKpiCards } from "./ArrayKpiCards";
+import { arrayIcons } from "../SectionForm/ArrayIcons";
+import KpiCard from "../KpiCard/KpiCard";
 
-const SectionAddKPI = ({ whenStarCliqued }) => {
-  // const array = ArrayKpiCards
-  const [kpiItems, setKpiItems] = useState([]);
+const SectionAddKPI = ({ kpiName, kpiNumber, kpiTooltip, kpiTrend, kpiIcon }) => {
 
-  console.log("valeur: ", whenStarCliqued);
-  const addKpiBlock = () => {
-    setKpiItems([
-      ...kpiItems,
-      <button className="kpiButtonBox" key={kpiItems.length}>
-        {whenStarCliqued && (
+  const [arrayKpiCardEmpty, setArrayKpiCardEmpty] = useState([]);
+  const [cardIsCliqued, setCardIsCliqued] = useState(false);
+  
+  const cardIsActive = () => {
+    setCardIsCliqued(true);
+  };
+  
+  
+  // const [active, setActive] = useState(null)
+  // const addKpiBlockWithEmptyData = () => {
+  //   setCardIsCliqued(true)
+  //   console.log(cardIsCliqued);
+    
+  // }
+
+  const addKpiBlockWithEmptyData = () => {
+    
+    setArrayKpiCardEmpty([
+      ...arrayKpiCardEmpty,
+      <button
+        onClick={cardIsActive}
+        className="kpiButtonBox"
+        key={arrayKpiCardEmpty.length}
+      >
+        {cardIsCliqued && (
           <div className="flex flexCol gp16">
             <div className="flex gp7">
               <div className="flex aic gp4">
-                <span className="titleCardKpi">NPS</span>
-                <img src={iconInfo} alt="Icon information" />
+                <span className="titleCardKpi">{kpiName}</span>
+                <img id="infoIcon" src={iconInfo} alt="Icon information" />
+                {/* <div className="test">
+                  <p id="tooltipText">KPI explanation</p>
+                </div> */}
               </div>
 
+
+              {/* à activer au hover */}
+                {/* {kpiTooltip} */}
+
+
               <div className="flex aic">
-                <p className="tooltipText hoverEffect">KPI explanation</p>
-                <img src={Sparkles} alt="sparkles" />
+                 {/* {kpiIcon.index} */}
+
+                {kpiIcon && arrayIcons.map((icon, index) => (
+                  <div key={index}>
+                    {icon.src}
+                  </div>
+                ))} 
+
+                
               </div>
             </div>
 
             <div className="flex aic gp24">
-              <span className="boldNumberCardKpi">74</span>
-              <img src={GraphCourbe} alt="Courbe" />
+              <span className="boldNumberCardKpi">{kpiNumber}</span>
+              {/* <img src={GraphCourbe} alt="Courbe" /> */}
+              {kpiTrend}
             </div>
           </div>
         )}
@@ -41,9 +75,11 @@ const SectionAddKPI = ({ whenStarCliqued }) => {
   return (
     <div className="addKpiArea">
       <div className="containerKpiArea flex flexWrap jcs gp24">
-        {kpiItems}
+        {arrayKpiCardEmpty}
 
-        <button onClick={addKpiBlock} className="kpiButtonAddElement">
+        {/* <KpiCard  /> */}
+
+        <button onClick={addKpiBlockWithEmptyData} className="kpiButtonAddElement">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="18"

@@ -2,9 +2,6 @@
   padding: 32px 24px;
 }
 
-.allElementsInput {
-}
-
 .iconBox {
   border-radius: 6px;
   border: 1px solid #e1e8ee;
@@ -22,12 +19,21 @@
 }
 
 input[type="text"],
-input[type="number"] {
+input[type="number"],
+textarea {
   padding: 8px 10px;
   align-self: stretch;
   border-radius: 6px;
   border: 1px solid #e1e8ee;
   background: $mainColorWhite;
+}
+
+textarea{
+ min-height: 95px !important;
+ max-height: 95px !important;
+ max-width: 100%;
+ min-width: 100%;
+ resize: none;
 }
 
 ::placeholder {
@@ -61,19 +67,6 @@ input[type="number"] {
   letter-spacing: -0.33px;
 }
 
-.tooltipText {
-  color: $mainColorWhite;
-  font-family: $mainFont;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: -0.006px;
-  padding: 8px;
-  border-radius: 6px;
-  background: #1b3448;
-}
-
 .updateButtonKpi {
   border-radius: 6px;
   background: #0aa9ec;
@@ -86,3 +79,43 @@ input[type="number"] {
   line-height: 140%;
   letter-spacing: -0.006px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
