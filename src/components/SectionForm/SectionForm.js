@@ -70,7 +70,7 @@ const SectionForm = ({ onUpdate, data }) => {
                   <p className="BoldText">Icon</p>
                 </div>
 
-                <div className="w100 flex gp8">
+                <div className="w100 flex gp8 flexWrap">
                   {arrayIcons.map((icon, index) => (
                     <button
                       onClick={() => getIcon(index)}
