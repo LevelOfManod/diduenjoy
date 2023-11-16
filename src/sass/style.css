@@ -334,19 +334,6 @@ textarea {
   letter-spacing: -0.33px;
 }
 
-.updateButtonKpi {
-  border-radius: 6px;
-  background: #0aa9ec;
-  padding: 8px 14px 8px 10px;
-  color: #f6f8fb;
-  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 140%;
-  letter-spacing: -0.006px;
-}
-
 #tooltipText {
   border-radius: 6px;
   background: #1b3448;
@@ -409,4 +396,17 @@ textarea {
 
 .trendOption {
   color: #1b3448 !important;
+}
+
+.updateButtonKpi {
+  border-radius: 6px;
+  background: #0aa9ec;
+  padding: 8px 14px 8px 10px;
+  color: #f6f8fb;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: -0.006px;
 }/*# sourceMappingURL=style.css.map */

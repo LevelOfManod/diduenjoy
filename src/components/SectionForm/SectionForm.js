@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { arrayIcons } from "./ArrayIcons";
-import RefreshIcon from "../../asset/img/refresh.svg";
 import SelectTrend from "../SelectTrend/SelectTrend";
+import Button from "../Button/Button";
 
 const SectionForm = ({ onUpdate, data, updateOption }) => {
   const [displayAllForm, setDisplayAllForm] = useState(false);
@@ -109,10 +109,7 @@ const SectionForm = ({ onUpdate, data, updateOption }) => {
               </div>
 
               <div className="flex jce ">
-                <button className="updateButtonKpi flex aic gp5">
-                  <img src={RefreshIcon} alt="Refresh section" />
-                  Update KPI
-                </button>
+                <Button />
               </div>
             </>
           )}
