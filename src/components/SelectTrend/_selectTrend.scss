@@ -8,22 +8,22 @@
 .selectTrend {
   background: $mainColorPureWhite;
   padding: 8px 10px;
-  border-radius: 6px;
-  border: 1px solid #e1e8ee;
+  border-radius: $bd6;
+  @extend %bd-solid-1-gray;
   cursor: pointer;
   p {
-    color: #9eb0be;
+    color: $mainColorGrayLightest500;
   }
 }
 
 .selectTrendMenu {
   color: $mainColorNavyBlue;
   padding: 5px;
-  border: 1px solid #e1e8ee;
+  @extend %bd-solid-1-gray;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: $bd4;
   ul li {
-    border-radius: 4px;
+    border-radius: $bd4;
     padding: 8px;
   }
   ul li:hover {

@@ -3,19 +3,19 @@
 }
 
 .iconBox {
-  border-radius: 6px;
-  border: 1px solid #e1e8ee;
+  border-radius: $bd6;
+  @extend %bd-solid-1-gray;
   background: $mainColorWhite;
   padding: 8px;
   cursor: pointer;
 }
 
 .iconBox:hover {
-  border: 1px solid #9eb0be;
+  border: 1px solid $mainColorGrayLightest500;
 }
 
 .iconBox:focus {
-  border: 1px solid #0aa9ec;
+  border: 1px solid $mainColorSkyBlue;
 }
 
 input[type="text"],
@@ -23,10 +23,12 @@ input[type="number"],
 textarea {
   padding: 8px 10px;
   align-self: stretch;
-  border-radius: 6px;
-  border: 1px solid #e1e8ee;
+  border-radius: $bd6;
   background: $mainColorPureWhite;
+  @extend %bd-solid-1-gray;
 }
+
+
 
 textarea{
  min-height: 95px !important;
@@ -37,7 +39,7 @@ textarea{
 }
 
 ::placeholder {
-  color: #9eb0be;
+  color: $mainColorGrayLightest500;
   font-family: $mainFont;
   font-size: 14px;
   font-style: normal;
@@ -47,7 +49,7 @@ textarea{
 }
 
 .titleCardKpi {
-  color: #1b3448;
+  color: $mainColorNavyBlue;
   font-family: $mainFont;
   font-size: 14px;
   font-style: normal;
@@ -57,7 +59,7 @@ textarea{
 }
 
 .boldNumberCardKpi {
-  color: #1b3448;
+  color: $mainColorNavyBlue;
   font-variant-numeric: lining-nums proportional-nums ordinal;
   font-family: $mainFont;
   font-size: 32px;
@@ -68,8 +70,8 @@ textarea{
 }
 
 .updateButtonKpi {
-  border-radius: 6px;
-  background: #0aa9ec;
+  border-radius: $bd6;
+  background: $mainColorSkyBlue;
   padding: 8px 14px 8px 10px;
   color: $mainColorWhite;
   font-family: $mainFont;

@@ -1,12 +1,43 @@
+//-------------------------------------
 //Colors
-$mainColorNavyBlue: #1B3448;
-$mainColorPureWhite: #FFF;
-$mainColorWhite: #F6F8FB;
-$mainColorGrayLightest: #F6F8FB;
+//-------------------------------------
+$mainColorNavyBlue: #1b3448;
+$mainColorPureWhite: #fff;
+$mainColorWhite: #f6f8fb;
+$mainColorWHite500: #e1e8ee;
+$mainColorGrayLightest: #f6f8fb;
+$mainColorGrayLightest500: #9eb0be;
 $mainColorBlack: #000;
-$mainColorSkyBlue: #0AA9EC;
+$mainColorSkyBlue: #0aa9ec;
 
-
-
+//-------------------------------------
 // Font
+//-------------------------------------
 $mainFont: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+//-------------------------------------
+// Shadow
+//-------------------------------------
+$mainShadowBox: 0px 2px 4px 0px rgba(0, 0, 0, 0.08),
+  0px 0px 6px 0px rgba(0, 0, 0, 0.02);
+$mainSadowBoxHeader1: 0px 2px 4px 0px #00000014;
+$mainSadowBoxHeader2: 0px 0px 6px 0px #00000005;
+
+//-------------------------------------
+// Border Radius
+//-------------------------------------
+$bd4: 4px;
+$bd6: 6px;
+
+//-------------------------------------
+// Function & Placeholder
+//-------------------------------------
+%bd-solid-1-gray {
+  border: 1px solid $mainColorWHite500;
+}
+%bd-solid-2-skyBlue {
+  border: 2px solid $mainColorSkyBlue;
+}
+%bd-dashed-1-gray {
+  border: 1px dashed  $mainColorGrayLightest500;
+}

@@ -12,17 +12,9 @@ const Home = () => {
     kpiTrend: null,
   });
 
-  console.log(allDataFromTheForm.kpiIcon);
-
   const handleFormUpdate = (updateData) =>{
     setAllDataFromTheForm(updateData)
   }
-
-  // console.log(allDataFromTheForm.kpiName);
-  // console.log(allDataFromTheForm.kpiTooltip);
-  // console.log(allDataFromTheForm.kpiIcon);
-  // console.log(allDataFromTheForm.kpiNumber);
-  // console.log(allDataFromTheForm.kpiTrend);
 
   return (
     <>

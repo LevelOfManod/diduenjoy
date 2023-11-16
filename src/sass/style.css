@@ -1,3 +1,17 @@
+.selectTrendMenu, .selectTrend, input[type=text],
+input[type=number],
+textarea, .iconBox {
+  border: 1px solid #e1e8ee;
+}
+
+.kpiButtonBox:focus {
+  border: 2px solid #0aa9ec;
+}
+
+.kpiButtonAddElement {
+  border: 1px dashed #9eb0be;
+}
+
 *,
 *::before,
 *::after {
@@ -78,6 +92,21 @@ button {
 .container {
   margin: 0 auto;
   width: 1170px;
+}
+
+.containerKpiArea {
+  max-width: 1512px;
+  margin: 0 64px;
+}
+
+.mainContainer {
+  background: #fff;
+  padding: 0px 24px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 0px 6px 0px rgba(0, 0, 0, 0.02);
+}
+
+.flexWrap {
+  flex-wrap: wrap;
 }
 
 .flex {
@@ -167,7 +196,7 @@ h4 {
 
 h5 {
   font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #F6F8FB;
+  color: #f6f8fb;
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
@@ -203,30 +232,15 @@ h5 {
   gap: 32px;
 }
 
-.containerKpiArea {
-  max-width: 1512px;
-  margin: 0 64px;
-}
-
-.mainContainer {
-  background: #FFF;
-  padding: 0px 24px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 0px 6px 0px rgba(0, 0, 0, 0.02);
-}
-
-.flexWrap {
-  flex-wrap: wrap;
-}
-
 header {
-  background-color: #1B3448;
+  background-color: #1b3448;
   padding: 24px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.0784313725);
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.0196078431);
 }
 
 .addKpiArea {
-  background: #F6F8FB;
+  background: #f6f8fb;
   padding: 64px 0;
 }
 
@@ -235,29 +249,7 @@ header {
   height: 133px;
   padding: 24px;
   border-radius: 6px;
-  border: 1px dashed #9eb0be;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 0px 6px 0px rgba(0, 0, 0, 0.02);
-}
-
-.kpiButtonBox {
-  border-radius: 6px;
-  background: #F6F8FB;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 0px 6px 0px rgba(0, 0, 0, 0.02);
-  width: 246px;
-  height: 133px;
-  padding: 24px;
-  cursor: pointer;
-}
-
-.kpiButtonBox:focus {
-  border-radius: 6px;
-  border: 2px solid #0aa9ec;
-  background: #F6F8FB;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 0px 6px 0px rgba(0, 0, 0, 0.02);
-}
-
-.aaa:hover .test p {
-  color: red;
 }
 
 .cardSettings {
@@ -266,8 +258,7 @@ header {
 
 .iconBox {
   border-radius: 6px;
-  border: 1px solid #e1e8ee;
-  background: #F6F8FB;
+  background: #f6f8fb;
   padding: 8px;
   cursor: pointer;
 }
@@ -286,8 +277,7 @@ textarea {
   padding: 8px 10px;
   align-self: stretch;
   border-radius: 6px;
-  border: 1px solid #e1e8ee;
-  background: #FFF;
+  background: #fff;
 }
 
 textarea {
@@ -343,7 +333,7 @@ textarea {
   border-radius: 6px;
   background: #0aa9ec;
   padding: 8px 14px 8px 10px;
-  color: #F6F8FB;
+  color: #f6f8fb;
   font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -360,6 +350,22 @@ textarea {
   display: none;
 }
 
+.kpiButtonBox {
+  border-radius: 6px;
+  background: #f6f8fb;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 0px 6px 0px rgba(0, 0, 0, 0.02);
+  width: 246px;
+  height: 133px;
+  padding: 24px;
+  cursor: pointer;
+}
+
+.kpiButtonBox:focus {
+  border-radius: 6px;
+  background: #f6f8fb;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 0px 6px 0px rgba(0, 0, 0, 0.02);
+}
+
 .selectDropdown {
   font-size: 14px;
   font-weight: 400;
@@ -368,10 +374,9 @@ textarea {
 }
 
 .selectTrend {
-  background: #FFF;
+  background: #fff;
   padding: 8px 10px;
   border-radius: 6px;
-  border: 1px solid #e1e8ee;
   cursor: pointer;
 }
 .selectTrend p {
@@ -379,9 +384,8 @@ textarea {
 }
 
 .selectTrendMenu {
-  color: #1B3448;
+  color: #1b3448;
   padding: 5px;
-  border: 1px solid #e1e8ee;
   cursor: pointer;
   border-radius: 4px;
 }
@@ -390,9 +394,9 @@ textarea {
   padding: 8px;
 }
 .selectTrendMenu ul li:hover {
-  background: #F6F8FB;
+  background: #f6f8fb;
 }
 .selectTrendMenu ul li:active {
-  background: #0AA9EC;
-  color: #FFF;
+  background: #0aa9ec;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

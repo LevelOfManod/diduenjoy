@@ -7,57 +7,7 @@
   width: 246px;
   height: 133px;
   padding: 24px;
-  border-radius: 6px;
-  border: 1px dashed #9eb0be;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08),
-    0px 0px 6px 0px rgba(0, 0, 0, 0.02);
-}
-
-.kpiButtonBox {
-  border-radius: 6px;
-  background: $mainColorWhite;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08),
-    0px 0px 6px 0px rgba(0, 0, 0, 0.02);
-  width: 246px;
-  height: 133px;
-  padding: 24px;
-  cursor: pointer;
-}
-
-.kpiButtonBox:focus {
-  border-radius: 6px;
-  border: 2px solid #0aa9ec;
-  background: $mainColorWhite;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08),
-    0px 0px 6px 0px rgba(0, 0, 0, 0.02);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-// #tooltipText {
-//   color: $mainColorWhite;
-//   font-family: $mainFont;
-//   font-size: 14px;
-//   font-style: normal;
-//   font-weight: 400;
-//   line-height: 140%;
-//   letter-spacing: -0.006px;
-//   padding: 8px;
-//   border-radius: 6px;
-//   background: #1b3448;
-//   display: none;
-// }
-
-
-.aaa:hover .test p{
-color: red;
+  border-radius: $bd6;
+  @extend %bd-dashed-1-gray ;
+  box-shadow: $mainShadowBox;
 }

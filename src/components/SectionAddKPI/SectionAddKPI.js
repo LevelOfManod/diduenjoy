@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { arrayIcons } from "../SectionForm/ArrayIcons";
 import KpiCard from "../KpiCard/KpiCard";
 
 const SectionAddKPI = ({ data }) => {
