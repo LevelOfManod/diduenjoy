@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import DoubleArrow from "../../asset/img/double_caret_vertical.svg";
 
-const SelectTrend = () => {
+const SelectTrend = ({ updateOption }) => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [elementCliqued, setElementCliqued] = useState(false);
   const [optionValueCliqued, setOptionValueCliqued] = useState(null);
@@ -18,6 +18,7 @@ const SelectTrend = () => {
     setOptionValueCliqued(dropdownOption[index]);
     setElementCliqued(true);
     setShowDropdown(false);
+    updateOption(index)
   };
 
   useEffect(() => {

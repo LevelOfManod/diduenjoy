@@ -12,9 +12,17 @@ const Home = () => {
     kpiTrend: null,
   });
 
+
   const handleFormUpdate = (updateData) =>{
     setAllDataFromTheForm(updateData)
   }
+  
+  const updateOption = (index) => {
+    setAllDataFromTheForm({
+      ...allDataFromTheForm,
+      kpiTrend: index,
+    });
+  };
 
   return (
     <>
@@ -27,6 +35,7 @@ const Home = () => {
       <SectionForm
         data={allDataFromTheForm}
         onUpdate={handleFormUpdate}
+        updateOption={updateOption}
       />
     </>
   );

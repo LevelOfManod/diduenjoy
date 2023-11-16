@@ -3,9 +3,8 @@ import { arrayIcons } from "./ArrayIcons";
 import RefreshIcon from "../../asset/img/refresh.svg";
 import SelectTrend from "../SelectTrend/SelectTrend";
 
-const SectionForm = ({ onUpdate, data }) => {
+const SectionForm = ({ onUpdate, data, updateOption }) => {
   const [displayAllForm, setDisplayAllForm] = useState(false);
-
   const getIcon = (index) => {
     const iconValue = index;
     onUpdate({ ...data, kpiIcon: iconValue });
@@ -105,12 +104,7 @@ const SectionForm = ({ onUpdate, data }) => {
                 </div>
 
                 <div className="w100">
-                  {/* <input
-                    className="input w100"
-                    placeholder="Select"
-                    type="text"
-                  /> */}
-                  <SelectTrend />
+                  <SelectTrend updateOption={updateOption} />
                 </div>
               </div>
 
