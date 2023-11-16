@@ -6,7 +6,7 @@ const SelectTrend = ({ updateOption }) => {
   const [elementCliqued, setElementCliqued] = useState(false);
   const [optionValueCliqued, setOptionValueCliqued] = useState(null);
   const dropdownRef = useRef(null);
-  const dropdownOption = ["—", "Positive", "Neutral"];
+  const dropdownOption = ["—", "Positive", "Neutral", "Negative"];
 
   const handleClickOutside = (event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -48,6 +48,7 @@ const SelectTrend = ({ updateOption }) => {
             {dropdownOption.map((option, index) => (
               <li key={index}>
                 <button
+                  onChange={(event) => handleClickOptionDropdown(event, index)}
                   onClick={(event) => handleClickOptionDropdown(event, index)}
                   className="flex w100"
                 >

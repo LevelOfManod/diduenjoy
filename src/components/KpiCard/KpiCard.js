@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import iconInfo from "../../asset/img/info_outined.svg";
 import { arrayIcons } from "../SectionForm/ArrayIcons";
+import { arrayTrend } from "./ArrayTrend";
 
 const KpiCard = ({ data }) => {
   const [cardIsCliqued, setCardIsCliqued] = useState(false);
@@ -8,6 +9,8 @@ const KpiCard = ({ data }) => {
   const aCardHasBeenSelected = () => {
     setCardIsCliqued(!cardIsCliqued);
   };
+
+  console.log(data.kpiTrend);
 
   return (
     <>
@@ -32,9 +35,15 @@ const KpiCard = ({ data }) => {
             {/* <div id="tooltipText" className="flex aic"></div> */}
           </div>
 
-          <div className="flex aic gp24">
-            <span className="boldNumberCardKpi">{data.kpiNumber}</span>
-            {data.kpiTrend}
+          <div className="flex aic jcsb gp24 w100">
+            <div>
+              <span className="boldNumberCardKpi">{data.kpiNumber}</span>
+            </div>
+            {arrayTrend
+              .filter((trend) => trend.index === data.kpiTrend)
+              .map((trend, index) => (
+                <div key={index}>{trend.src}</div>
+              ))}
           </div>
         </button>
       ) : (
