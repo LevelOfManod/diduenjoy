@@ -17,7 +17,6 @@
 }
 
 .selectTrendMenu {
-  color: $mainColorNavyBlue;
   padding: 5px;
   @extend %bd-solid-1-gray;
   cursor: pointer;
@@ -31,6 +30,12 @@
   }
   ul li:active {
     background: $mainColorSkyBlue;
-    color: $mainColorPureWhite;
+    button {
+      color: $mainColorPureWhite;
+    }
   }
+}
+
+.trendOption {
+  color: $mainColorNavyBlue !important;
 }

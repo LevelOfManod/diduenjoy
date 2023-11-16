@@ -3,12 +3,21 @@ import DoubleArrow from "../../asset/img/double_caret_vertical.svg";
 
 const SelectTrend = () => {
   const [showDropdown, setShowDropdown] = useState(false);
+  const [elementCliqued, setElementCliqued] = useState(false);
+  const [optionValueCliqued, setOptionValueCliqued] = useState(null);
   const dropdownRef = useRef(null);
+  const dropdownOption = ["—", "Positive", "Neutral"];
 
   const handleClickOutside = (event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
       setShowDropdown(false);
     }
+  };
+
+  const handleClickOptionDropdown = (event, index) => {
+    setOptionValueCliqued(dropdownOption[index]);
+    setElementCliqued(true);
+    setShowDropdown(false);
   };
 
   useEffect(() => {
@@ -20,17 +29,31 @@ const SelectTrend = () => {
 
   return (
     <div className="flex flexCol gp8 selectDropdown" ref={dropdownRef}>
-      <button onClick={() => setShowDropdown(!showDropdown)} className="selectTrend flex jcsb aic">
-        <p>Select</p>
+      <button
+        onClick={() => setShowDropdown(!showDropdown)}
+        className="selectTrend flex jcsb aic"
+      >
+        {elementCliqued ? (
+          <p className="trendOption">{optionValueCliqued}</p>
+        ) : (
+          <p>Select</p>
+        )}
         <img src={DoubleArrow} alt="Flèche de sélection" />
       </button>
 
       {showDropdown && (
         <div className="selectTrendMenu">
           <ul>
-            <li>—</li>
-            <li>Positive</li>
-            <li>Neutral</li>
+            {dropdownOption.map((option, index) => (
+              <li key={index}>
+                <button
+                  onClick={(event) => handleClickOptionDropdown(event, index)}
+                  className="flex w100"
+                >
+                  {option}
+                </button>
+              </li>
+            ))}
           </ul>
         </div>
       )}

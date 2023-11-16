@@ -384,7 +384,6 @@ textarea {
 }
 
 .selectTrendMenu {
-  color: #1b3448;
   padding: 5px;
   cursor: pointer;
   border-radius: 4px;
@@ -398,5 +397,11 @@ textarea {
 }
 .selectTrendMenu ul li:active {
   background: #0aa9ec;
+}
+.selectTrendMenu ul li:active button {
   color: #fff;
+}
+
+.trendOption {
+  color: #1b3448 !important;
 }/*# sourceMappingURL=style.css.map */
