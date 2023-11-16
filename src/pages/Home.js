@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "../components/Header/Header";
 import SectionAddKPI from "../components/SectionAddKPI/SectionAddKPI";
 import SectionForm from "../components/SectionForm/SectionForm";
+
 const Home = () => {
 
   const [allDataFromTheForm, setAllDataFromTheForm] = useState({
@@ -12,11 +13,10 @@ const Home = () => {
     kpiTrend: null,
   });
 
+  const handleFormUpdate = (updateData) => {
+    setAllDataFromTheForm(updateData);
+  };
 
-  const handleFormUpdate = (updateData) =>{
-    setAllDataFromTheForm(updateData)
-  }
-  
   const updateOption = (index) => {
     setAllDataFromTheForm({
       ...allDataFromTheForm,
@@ -28,10 +28,8 @@ const Home = () => {
     <>
       <Header />
 
-      <SectionAddKPI
-       data={allDataFromTheForm}
-      />
-     
+      <SectionAddKPI data={allDataFromTheForm} />
+
       <SectionForm
         data={allDataFromTheForm}
         onUpdate={handleFormUpdate}
