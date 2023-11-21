@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/kpi_card-generator/static/css/main.5db58fe1.css",
-    "main.js": "/kpi_card-generator/static/js/main.3fb813ad.js",
-    "static/js/787.9d85f7d8.chunk.js": "/kpi_card-generator/static/js/787.9d85f7d8.chunk.js",
+    "main.js": "/kpi_card-generator/static/js/main.f43aed98.js",
+    "static/js/787.f57661a1.chunk.js": "/kpi_card-generator/static/js/787.f57661a1.chunk.js",
     "static/media/info_outined.svg": "/kpi_card-generator/static/media/info_outined.0d6b65d41f6eb1a8683bdd439b2b08e6.svg",
     "static/media/double_caret_vertical.svg": "/kpi_card-generator/static/media/double_caret_vertical.4f618a5a48245c823fccb45f76d61b22.svg",
     "static/media/refresh.svg": "/kpi_card-generator/static/media/refresh.20c3eea1c5a316e827e8ee91a7306a4c.svg",
     "index.html": "/kpi_card-generator/index.html",
     "main.5db58fe1.css.map": "/kpi_card-generator/static/css/main.5db58fe1.css.map",
-    "main.3fb813ad.js.map": "/kpi_card-generator/static/js/main.3fb813ad.js.map",
-    "787.9d85f7d8.chunk.js.map": "/kpi_card-generator/static/js/787.9d85f7d8.chunk.js.map"
+    "main.f43aed98.js.map": "/kpi_card-generator/static/js/main.f43aed98.js.map",
+    "787.f57661a1.chunk.js.map": "/kpi_card-generator/static/js/787.f57661a1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5db58fe1.css",
-    "static/js/main.3fb813ad.js"
+    "static/js/main.f43aed98.js"
   ]
 }
