@@ -4,7 +4,7 @@
 
 Card kpi generator with react js and scss
 
-link: https://levelofmanod.github.io/diduenjoy/
+link: https://levelofmanod.github.io/kpi_card-generator/
 
 <div style="display: flex; justify-content: space-between; gap: 24px; align-items: center;">
   <img src="/src/asset/img/react.svg" alt="React Logo" width="100" />

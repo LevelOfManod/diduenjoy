@@ -4,7 +4,7 @@ import SectionAddKPI from "../components/SectionAddKPI/SectionAddKPI";
 import SectionForm from "../components/SectionForm/SectionForm";
 
 const Home = () => {
-
+// un tableau d'objet
   const [allDataFromTheForm, setAllDataFromTheForm] = useState({
     kpiName: null,
     kpiTooltip: null,
